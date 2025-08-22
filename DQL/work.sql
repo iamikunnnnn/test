@@ -78,3 +78,5 @@ LEFT JOIN classes ON classes.teacher_id = teachers.id
 LEFT JOIN students ON classes.id = students.cls_id
 WHERE NOT EXISTS(SELECT 1 FROM classes WHERE classes.teacher_id = teachers.id)
 
+
+
