@@ -41,17 +41,8 @@ SELECT COUNT(*) AS '学生人数',
 FROM students
 GROUP BY 年龄段;
 
-
-
-
-
-
-
-
-
-
-
 # 显示学生表中每个班级的最大年龄的学生姓名和对应的年龄--------------------(报错，修正版见4连接查询)
 SELECT students.cls_id,MAX(students.age) AS '最大年龄',students.name  FROM students
-GROUP BY students.cls_id
+GROUP BY students.cls_id;
+
 
