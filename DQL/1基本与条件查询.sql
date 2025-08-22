@@ -29,11 +29,11 @@ WHERE height>160 AND gender='女';
 SELECT * FROM students
 WHERE name LIKE '周%';
 
-# 范围1
+# 匹配范围 1 （id在1，3，5里的）
 SELECT * FROM students
 WHERE id IN (1,3,5);
 
-# 范围2
+# 匹配范围 2 （height在160-180里的）
 SELECT * FROM students
 WHERE height BETWEEN 160 AND 180;
 
