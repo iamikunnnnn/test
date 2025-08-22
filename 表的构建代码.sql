@@ -54,3 +54,5 @@ INSERT INTO `classes` (`id`, `teacher_id`, `cls_content`, `cls_date`, `name`) VA
 INSERT INTO `classes` (`id`, `teacher_id`, `cls_content`, `cls_date`, `name`) VALUES (3, 2, '数据结构班', '2024-11-01 00:00:00', 'data_struct_01期');
 
 
+
+
