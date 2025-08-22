@@ -19,6 +19,7 @@ INSERT INTO borrow_records( reader_id, book_id, borrow_time, status)
 VALUE (10,8,NOW(),0);
 
 COMMIT ;
+
 SELECT '借阅成功' AS result
 
 
