@@ -52,3 +52,5 @@ TRUNCATE classes;
 INSERT INTO `classes` (`id`, `teacher_id`, `cls_content`, `cls_date`, `name`) VALUES (1, 1, '班级学生有较强的学习能力', '2024-10-01 00:00:00', 'python_01期');
 INSERT INTO `classes` (`id`, `teacher_id`, `cls_content`, `cls_date`, `name`) VALUES (2, 2, '班级学生比较顽皮', '2024-11-01 00:00:00', 'python_02期');
 INSERT INTO `classes` (`id`, `teacher_id`, `cls_content`, `cls_date`, `name`) VALUES (3, 2, '数据结构班', '2024-11-01 00:00:00', 'data_struct_01期');
+
+
