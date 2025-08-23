@@ -88,6 +88,20 @@ class Person():
         else:
             print("登录失败,请重新登录")
 
+    def change_password(self):
+        name = input("请输入用户名：")
+        password = input("请输入密码：")
+        # 点击登录按钮，从数据库中 获取 数据
+        helper = MysqlHelper(host='localhost', user='root', password='iamikun', database='firstdb')
+        # 注意这里的返回值count是一行记录，例如（1，'张三'，1234），我们只要判断id是否>0，来判断是否登陆成功，所以用下面count[0]
+        count = helper.fetch_one("select count(*) from tb_users where username=%s and password=%s",
+                                 [name, password])
+        # print(count)
+
+        if count[0] > 0:
+            input("请输入新密码")
+        else:
+            print("帐号或密码错误，无法修改密码")
 
 if __name__ == "__main__":
     while True:
