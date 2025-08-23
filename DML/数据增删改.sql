@@ -7,6 +7,16 @@ VALUES (1,'张三', 18,19,'男',1,0);
 INSERT INTO teachers (id, name)
 VALUES (1,'刘姥姥'),(3,'张大爷');
 
+# 用SELECT 单行插入
+INSERT INTO teachers (id, name)
+SELECT 5,'飞老师';
+
+# 用SELECT 多行插入
+INSERT INTO teachers (id, name)
+SELECT 6, '朴卡卡'
+UNION ALL
+SELECT 7, '梦老师';
+
 # ---------------删除（删）-------------------------
 # 删除数据,DELETE在事件中可回滚(DROP是删除字段)
 DELETE FROM teachers
