@@ -99,7 +99,11 @@ class Person():
         # print(count)
 
         if count[0] > 0:
-            input("请输入新密码")
+            new_passwd = input("请输入新密码")
+            new_passwa_again=input("请再次输入密码")
+            if new_passwd == new_passwa_again:
+
+
         else:
             print("帐号或密码错误，无法修改密码")
 
